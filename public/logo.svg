@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" fill="none">
+  <defs>
+    <linearGradient id="capGrad" x1="0" y1="0" x2="60" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5BA4C9"/>
+      <stop offset="100%" stop-color="#3A7FA8"/>
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="20" y1="30" x2="70" y2="85" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A95B8"/>
+      <stop offset="100%" stop-color="#6DB3D0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Graduation Cap -->
+  <g transform="translate(2, 0)">
+    <!-- Cap top (diamond shape) -->
+    <polygon points="38,6 8,22 38,38 68,22" fill="url(#capGrad)"/>
+    <!-- Cap brim underside -->
+    <polygon points="38,38 68,22 68,26 38,42 8,26 8,22" fill="#3A7FA8" opacity="0.8"/>
+
+    <!-- Tassel string from top -->
+    <line x1="38" y1="6" x2="38" y2="2" stroke="#5BA4C9" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Tassel button -->
+    <circle cx="38" cy="1.5" r="2" fill="#5BA4C9"/>
+    <!-- Tassel hanging line -->
+    <path d="M38,6 Q32,14 22,20" stroke="#5BA4C9" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <!-- Tassel end -->
+    <circle cx="21" cy="21" r="2.2" fill="#4A95B8"/>
+
+    <!-- Cap body / hanging sides -->
+    <path d="M18,28 L18,48 Q38,58 58,48 L58,28" fill="none" stroke="#4A95B8" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- S Swoosh curve -->
+    <path d="M30,42 C24,48 20,56 28,64 C36,72 44,68 48,60 C52,52 58,48 66,52 C74,56 72,66 64,72"
+          stroke="url(#swooshGrad)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Small decorative curve connecting S to cap -->
+    <path d="M28,64 C32,70 40,74 48,70" stroke="#6DB3D0" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+  </g>
+
+  <!-- Text Group -->
+  <g transform="translate(88, 0)">
+    <!-- SIMPLIFY -->
+    <text x="0" y="24" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="19" fill="#4A5568" letter-spacing="1.5">SIMPLIFY</text>
+
+    <!-- MVT -->
+    <text x="0" y="48" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="19" fill="#4A5568" letter-spacing="1.5">MVT</text>
+
+    <!-- ACADEMY -->
+    <text x="0" y="72" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="19" fill="#4A95B8" letter-spacing="1.5">ACADEMY</text>
+
+    <!-- Empowering Partners -->
+    <text x="0" y="86" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="400" font-size="9.5" fill="#7A8A9E" letter-spacing="0.8">Empowering Partners</text>
+  </g>
+</svg>

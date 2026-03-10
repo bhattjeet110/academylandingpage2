@@ -1,0 +1,488 @@
+<!-- NAVBAR -->
+<nav class="navbar" [class.scrolled]="true">
+  <div class="container nav-container">
+    <a class="nav-logo" (click)="scrollTo('hero')">
+      <img src="logo.png" alt="SimplifyMVT Academy" class="logo-img">
+    </a>
+    <ul class="nav-links" [class.open]="mobileMenuOpen">
+      <li><a (click)="scrollTo('class-details')">About the Course</a></li>
+      <li><a (click)="scrollTo('curriculum')">Curriculum</a></li>
+      <li><a (click)="scrollTo('faculty')">Faculties</a></li>
+      <li><a (click)="scrollTo('why-us')">Benefits</a></li>
+      <li><a (click)="scrollTo('about')">Why Medical Tourism</a></li>
+      <li><a (click)="scrollTo('testimonials')">Testimonials</a></li>
+      <li><a (click)="scrollTo('faq')">FAQ's</a></li>
+      <li><a (click)="scrollTo('contact')" class="nav-cta">Apply Now</a></li>
+    </ul>
+    <button class="mobile-toggle" (click)="toggleMobileMenu()" [class.active]="mobileMenuOpen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <div class="hero-badge-line">
+        <span class="hero-badge-pill">India's Leading Medical Tourism Training</span>
+      </div>
+      <h1>From Confusion to Career —<br><span class="highlight">Your Journey Starts Here</span></h1>
+      <p class="hero-subtitle">Learn. Get Skilled. Get Placed.</p>
+      <p class="hero-desc">Stop guessing your future. Start building a real career in the fast-growing Medical Tourism industry.</p>
+      <p class="hero-desc hero-desc-sub">SimplifyMVT Academy helps freshers, graduates, and aspiring entrepreneurs enter the healthcare business industry with practical training, hospital exposure, and structured placement support.</p>
+      <div class="guarantee-badges">
+        <div class="g-badge placement">
+          <span class="g-icon">&#10003;</span>
+          <span>100% Placement Guarantee</span>
+        </div>
+        <div class="g-badge cashback">
+          <span class="g-icon">&#10003;</span>
+          <span>50% Cash Back Guarantee*</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a (click)="scrollTo('contact')" class="btn btn-primary btn-lg">Apply Now</a>
+        <a (click)="scrollTo('curriculum')" class="btn btn-outline btn-lg">Explore Curriculum</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-tagline">
+    <div class="container">
+      <p>We don't just enroll students — <strong>We are committed to building careers.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT THE COURSE (CLASS DETAILS) -->
+<section class="class-details" id="class-details">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">About the Course</div>
+      <h2>Class Details</h2>
+      <p>We are confident about the quality of our training and career support.</p>
+    </div>
+    <div class="class-details-grid">
+      <div class="class-info-card">
+        <div class="details-list">
+          <div class="detail-item">
+            <div class="detail-icon">📋</div>
+            <div><strong>Mode</strong><span>Offline Classroom Training</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📅</div>
+            <div><strong>Date</strong><span>Upcoming Batch Date</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">🕐</div>
+            <div><strong>Timing</strong><span>11 AM – 2 PM</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📚</div>
+            <div><strong>Sessions</strong><span>10 Power-Packed Sessions</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">⏱️</div>
+            <div><strong>Duration</strong><span>3 Months</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📆</div>
+            <div><strong>Day</strong><span>Every Saturday (Once a week)</span></div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-icon">📍</div>
+            <div><strong>Location</strong><span>Andheri East, Mumbai</span></div>
+          </div>
+          <div class="detail-item detail-highlight">
+            <div class="detail-icon">💰</div>
+            <div><strong>Charges</strong><span>Rs. 24,999/-</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="class-benefits">
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> 100% Placement Support for eligible candidates</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> 50% Cash Back Guarantee (*Terms &amp; Conditions Apply)</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> 9 live Sessions (36 hours Offline Training)</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> Real Hospital Visit for Practical Exposure</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> Small batch size for personal attention</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> Industry-Focused Practical Training</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> Interview Preparation &amp; Resume Support</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> Career Counselling Guidance</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> 1:1 Mock Interview Sessions Training</div>
+        <div class="benefit-item"><span class="benefit-check">&#10003;</span> 50+ Interview Q&amp;A Templates</div>
+        <a (click)="scrollTo('contact')" class="btn btn-primary btn-full">Enroll Now — Limited Seats Available</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MEDICAL TOURISM -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">The Opportunity</div>
+      <h2>Why Medical Tourism?</h2>
+      <p>Medical Tourism is one of the fastest-growing industries globally. India has become a preferred destination for international patients.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🏥</div>
+        <h4>Advanced Healthcare</h4>
+        <p>World-class hospitals and medical facilities</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">👨‍⚕️</div>
+        <h4>Skilled Doctors</h4>
+        <p>Internationally recognized medical professionals</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">💰</div>
+        <h4>Affordable Costs</h4>
+        <p>60–80% lower treatment costs vs Western countries</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🏛️</div>
+        <h4>Government Support</h4>
+        <p>Strong policy development & promotion initiatives</p>
+      </div>
+    </div>
+    <div class="about-bottom">
+      <p>We don't just teach theory — <strong>We prepare you for a real industry.</strong> Our training includes practical exposure and hospital visits so you understand real operations — not just classroom concepts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CURRICULUM -->
+<section class="curriculum-section" id="curriculum">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Here's What You Will Learn</div>
+      <h2>10-Session Mastermind Class in Medical Tourism</h2>
+      <p>That Can Change Your Career Direction</p>
+    </div>
+    <div class="sessions-grid">
+      @for (session of sessions; track $index) {
+        <div class="session-card" [class.active]="activeSession === $index" (click)="toggleSession($index)">
+          <div class="session-header">
+            <div class="session-number">{{ $index + 1 < 10 ? '0' : '' }}{{ $index + 1 }}</div>
+            <h4>{{ session.title }}</h4>
+            <div class="session-toggle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path [attr.d]="activeSession === $index ? 'M5 12.5L10 7.5L15 12.5' : 'M5 7.5L10 12.5L15 7.5'" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          @if (activeSession === $index) {
+            <div class="session-body">
+              <p>{{ session.desc }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 1 -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Your Career Doesn't Need 2 Years — It Needs the Right Direction.</h2>
+      <p>Medical Tourism is a growing healthcare business industry. Take the first step today.</p>
+      <div class="cta-btns">
+        <a (click)="scrollTo('contact')" class="btn btn-white">Reserve Your Seat Now</a>
+        <a (click)="scrollTo('contact')" class="btn btn-outline-white">Talk to Counselor</a>
+      </div>
+      <span class="cta-note">Limited Seats Available</span>
+    </div>
+  </div>
+</section>
+
+<!-- FACULTY -->
+<section class="faculty-section" id="faculty">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Expert Mentors</div>
+      <h2>Learn From the Top Faculties</h2>
+    </div>
+    <div class="faculty-grid">
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <div class="avatar-placeholder">MV</div>
+        </div>
+        <h4>Mr. Mihir Vora</h4>
+        <span class="faculty-role">Medical Tourism Industry Expert</span>
+        <p>Specialized in International Patient Management & Hospital Coordination with extensive industry experience.</p>
+      </div>
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <div class="avatar-placeholder">SR</div>
+        </div>
+        <h4>Ms. Snehha Rawther</h4>
+        <span class="faculty-role">Healthcare Business Consultant</span>
+        <p>Expert in Digital Marketing &amp; Operation Business Setup Strategy.</p>
+      </div>
+      <div class="faculty-card">
+        <div class="faculty-avatar">
+          <div class="avatar-placeholder">SS</div>
+        </div>
+        <h4>Mr. Saurabh Shah</h4>
+        <span class="faculty-role">Placement & Career Mentor</span>
+        <p>Focused on Interview Preparation & Professional Development to ensure career readiness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Success Stories</div>
+      <h2>What Our Students Say</h2>
+    </div>
+    <div class="testimonial-slider">
+      <div class="testimonial-slide">
+        <div class="quote-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <path d="M18 24H9C9 17.37 14.37 12 21 12V18C17.69 18 15 20.69 15 24V25.5H18C19.65 25.5 21 26.85 21 28.5V34.5C21 36.15 19.65 37.5 18 37.5H12C10.35 37.5 9 36.15 9 34.5V24H9Z" fill="currentColor" opacity="0.15"/>
+            <path d="M39 24H30C30 17.37 35.37 12 42 12V18C38.69 18 36 20.69 36 24V25.5H39C40.65 25.5 42 26.85 42 28.5V34.5C42 36.15 40.65 37.5 39 37.5H33C31.35 37.5 30 36.15 30 34.5V24H30Z" fill="currentColor" opacity="0.15"/>
+          </svg>
+        </div>
+        <p class="testimonial-text">"{{ testimonials[currentTestimonial].text }}"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">{{ testimonials[currentTestimonial].name.charAt(0) }}</div>
+          <span>{{ testimonials[currentTestimonial].name }}</span>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" (click)="prevTestimonial()">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="slider-dots">
+          @for (t of testimonials; track $index) {
+            <span class="dot" [class.active]="currentTestimonial === $index" (click)="currentTestimonial = $index"></span>
+          }
+        </div>
+        <button class="slider-btn" (click)="nextTestimonial()">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SIMPLIFYMVT ACADEMY -->
+<section class="why-us-section" id="why-us">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Advantage</div>
+      <h2>Why SimplifyMVT Academy?</h2>
+    </div>
+    <div class="why-us-grid">
+      @for (item of whyUs; track $index) {
+        <div class="why-card">
+          <div class="why-icon">{{ item.icon }}</div>
+          <h4>{{ item.title }}</h4>
+          <p>{{ item.desc }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNMENT INITIATIVES & INDUSTRY GROWTH -->
+<section class="growth-section" id="growth">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Industry Insight</div>
+      <h2>Growth of Medical Tourism Industry</h2>
+      <p>Medical Tourism is strongly supported by government initiatives</p>
+    </div>
+    <div class="growth-grid">
+      <div class="growth-card govt-card">
+        <h3>Government of India Initiatives</h3>
+        <ul>
+          <li><strong>Heal in India Initiative</strong> — promoting India as a global healthcare destination</li>
+          <li>E-Medical Visa & E-Medical Attendant Visa facilities</li>
+          <li>Promotion under the Ministry of Tourism</li>
+          <li>Support from the Ministry of Health & Family Welfare</li>
+          <li>Promotion through "Incredible India" campaign</li>
+        </ul>
+      </div>
+      <div class="growth-card industry-card">
+        <h3>Industry Growth Highlights</h3>
+        <ul>
+          <li>India is among the <strong>top global destinations</strong> for medical tourism</li>
+          <li>Patients travel from Africa, Middle East, SAARC & Asia</li>
+          <li><strong>60–80% lower</strong> treatment costs vs Western countries</li>
+          <li>Continuous increase in international patient inflow yearly</li>
+          <li>Mumbai is a leading city for international treatments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Got Questions?</div>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      @for (faq of faqs; track $index) {
+        <div class="faq-item" [class.active]="activeFaq === $index" (click)="toggleFaq($index)">
+          <div class="faq-question">
+            <span class="faq-num">{{ $index + 1 < 10 ? '0' : '' }}{{ $index + 1 }}</span>
+            <h4>{{ faq.q }}</h4>
+            <div class="faq-toggle">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4V16M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" [style.display]="activeFaq === $index ? 'none' : 'block'"/>
+                <path d="M4 10H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" [style.display]="activeFaq === $index ? 'block' : 'none'"/>
+              </svg>
+            </div>
+          </div>
+          @if (activeFaq === $index) {
+            <div class="faq-answer">
+              <p>{{ faq.a }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER 2 -->
+<section class="cta-banner cta-final">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Your Career Confusion Ends Here</h2>
+      <p>Medical Tourism is Growing. Opportunities Are Growing. Are You Ready?</p>
+      <div class="cta-btns">
+        <a (click)="scrollTo('contact')" class="btn btn-white">Register Today</a>
+        <a (click)="scrollTo('contact')" class="btn btn-outline-white">Book Free Counseling</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Get in Touch</div>
+      <h2>Have Questions? We're Here to Help.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Address</strong>
+            <p>Andheri East, Mumbai, Maharashtra</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong>WhatsApp</strong>
+            <p>Contact us on WhatsApp</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p>info&#64;simplifymvt.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <h3>Apply Now</h3>
+        <p>Fill in your details and we'll get back to you.</p>
+        <form class="contact-form" (submit)="$event.preventDefault()">
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone / WhatsApp Number" required>
+          <select>
+            <option value="" disabled selected>Experience *</option>
+            <option>Working Professional</option>
+            <option>College Student - Final Year</option>
+            <option>College Student - 1st to Pre Final Year</option>
+            <option>Looking for Job</option>
+            <option>Career Confusion</option>
+            <option>MBA Student</option>
+            <option>Run Own Business</option>
+          </select>
+          <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IS THIS PROGRAM FOR YOU -->
+<section class="final-section">
+  <div class="container">
+    <h2>Is This Program For You?</h2>
+    <p class="final-subtitle">If you are:</p>
+    <div class="final-checks">
+      <div class="check-item"><span class="check">&#10003;</span> Looking for Job</div>
+      <div class="check-item"><span class="check">&#10003;</span> Confused about your career</div>
+      <div class="check-item"><span class="check">&#10003;</span> Planning MBA but unsure</div>
+      <div class="check-item"><span class="check">&#10003;</span> Interested in healthcare industry</div>
+      <div class="check-item"><span class="check">&#10003;</span> Wanting to start a business</div>
+      <div class="check-item"><span class="check">&#10003;</span> Looking for a growing industry</div>
+    </div>
+    <p class="final-text">Then this program is for you. Your confusion ends here. <strong>Your professional journey begins here.</strong></p>
+    <a href="#" class="btn btn-outline btn-lg">Download our Brochure</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="SimplifyMVT Academy" class="footer-logo">
+        <p>Empowering careers in Medical Tourism industry with practical training and placement support.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a (click)="scrollTo('about')">Why Medical Tourism</a>
+        <a (click)="scrollTo('curriculum')">Curriculum</a>
+        <a (click)="scrollTo('faculty')">Faculty</a>
+        <a (click)="scrollTo('faq')">FAQ</a>
+        <a (click)="scrollTo('contact')">Contact</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Andheri East, Mumbai, Maharashtra</p>
+        <p>info&#64;simplifymvt.com</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SimplifyMVT Academy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
